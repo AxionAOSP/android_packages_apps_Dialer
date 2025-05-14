@@ -72,6 +72,7 @@ import com.android.dialer.util.IntentUtil;
 import com.android.dialer.util.PermissionsUtil;
 import com.android.dialer.widget.EmptyContentView;
 import com.android.dialer.widget.EmptyContentView.OnEmptyViewActionButtonClickedListener;
+
 import com.google.common.collect.ImmutableList;
 import com.google.common.util.concurrent.Futures;
 
@@ -166,7 +167,7 @@ public class SpeedDialFragment extends Fragment {
     LogUtil.enterBlock("SpeedDialFragment.onCreateView");
     View rootLayout = inflater.inflate(R.layout.fragment_speed_dial, container, false);
     emptyContentView = rootLayout.findViewById(R.id.speed_dial_empty_content_view);
-    emptyContentView.setImage(R.drawable.empty_speed_dial);
+    emptyContentView.setImage(R.drawable.oneplus_empty_speed_dial_illustration);
 
     speedDialLoaderListener =
         DialerExecutorComponent.get(getContext())
